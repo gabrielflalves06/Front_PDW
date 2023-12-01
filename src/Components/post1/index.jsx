@@ -53,7 +53,7 @@ export default function Post1({ postId }) {
                     <p>Quando eu era criança, alguém me disse que você poderia assistir toda a série Star Wars pelo terminal de comandos, apenas com caracteres do teclado. Para um computador Windows: Passo 1: Abra o terminal no seu PC, digite o comando abaixo e pressione ↵Enter. pkgmgr /iu:"TelnetClient" Se você ver uma...</p>
                 </div>
             </div>
-
+            
             <img className={styles.post_image} src="/Images/download.jpg" alt="" width={1116} height={540} />
 
             <div className={styles.comentarios}>
