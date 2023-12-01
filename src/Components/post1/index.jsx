@@ -1,7 +1,26 @@
+import { useLocation } from "react-router-dom";
 import styles from "./post1.module.css"
-
+import { useState } from "react";
+import CriarPost from "../CriarPost";
 
 export default function Post1({ postId }) {
+
+    const location = useLocation();
+
+    const isPaginaInicial = location.pathname === '/';
+    const isOutraPagina = location.pathname === '/comentario';
+
+
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <div className={styles.post_container}>
             <div className={styles.post_superior}>
@@ -16,7 +35,7 @@ export default function Post1({ postId }) {
                 </div>
                 <div className={styles.post_text}>
                     <div className={styles.menu}>
-                        <input type="checkbox" id={`menu_${postId}`}  className={styles.bottom} />
+                        <input type="checkbox" id={`menu_${postId}`} className={styles.bottom} />
                         <label htmlFor={`menu_${postId}`}>
                             <span className={styles.menu_hamburguer}></span>
                         </label>
@@ -38,8 +57,25 @@ export default function Post1({ postId }) {
             <img className={styles.post_image} src="/Images/download.jpg" alt="" width={1116} height={540} />
 
             <div className={styles.comentarios}>
-                <a href="/"><img src="/Images/Comentario.svg" alt="" width={80} height={50}/>Dá pra colocar o numeros de comentarios?? se nn só tirar isso (deixa a imagem)</a>
+                {isPaginaInicial && (
+                    <a href="/comentario"><img src="/Images/Comentario.svg" alt="" width={80} height={50} />Dá pra colocar o numeros de comentarios?? se nn só tirar isso (deixa a imagem)</a>
+                )}
+
+                {isOutraPagina && (
+                    <button onClick={openModal}><img src="/Images/balao.svg" alt="" width={80} height={50} />Deixe um comentario</button>
+                )}
+
+                
             </div>
+
+            {showModal && (
+                <div /* className="modal" */>
+                    <div /* className="modal-content" */>
+                        <span /* className="close" */ onClick={closeModal}>&times;</span>
+                        <CriarPost closeModal={closeModal}/>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

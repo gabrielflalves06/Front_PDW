@@ -27,7 +27,7 @@ export default function Head() {
                 </div>
                 <div className={styles.icons_container}>
                     <div>
-                        <a href={""}>
+                        <a href={"/lista-comunidade"}>
                             <img
                                 src="/Images/Comunidade.svg"
                                 alt="community icon"
