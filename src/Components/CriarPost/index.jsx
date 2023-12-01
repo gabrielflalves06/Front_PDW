@@ -1,5 +1,9 @@
 import './styles.css'
-export default function CriarPost() {
+export default function CriarPost({closeModal}) {
+
+    const fecharModal = () => {
+        closeModal(); // Chama a função para fechar o modal
+    };
     return (
         <section className="EstiloPost">
             <div className="titulo">
@@ -14,7 +18,7 @@ export default function CriarPost() {
             </div>
             <div className="botoes">
                 <button className="criar"/* href="" */>Criar<img src="/Images/lapis.svg" /></button>
-                <button className="cancelar" /* href="" */>Cancelar<img src="/Images/cancelar.svg" /></button>
+                <button className="cancelar" onClick={fecharModal}>Cancelar<img src="/Images/cancelar.svg" /></button>
             </div>
         </section>
     )

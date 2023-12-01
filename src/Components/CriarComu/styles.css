@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #222831;
+    background-color: rgba(33, 39, 48, 0.7);
     padding: 100px;
     width: 80%;
     height: 80%;
@@ -11,6 +11,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+    z-index: 100;
 }
 
 .EstiloComu .primeira {

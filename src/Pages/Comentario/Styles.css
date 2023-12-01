@@ -16,7 +16,7 @@
     flex-direction: row;
 }
 
-.comentario button{
+.comentario {
     position: fixed;
     top: 80%;
     /* Ajuste a posição vertical conforme necessário */
