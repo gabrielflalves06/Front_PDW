@@ -1,7 +1,7 @@
 import "./styles.css"
 
-export default function Cadastro(){
-    return(
+export default function Cadastro() {
+    return (
         <div className="cad_body">
             <div className="cad_container">
                 <div className="slogan_container">
@@ -12,13 +12,17 @@ export default function Cadastro(){
                         height={146} />
                 </div>
                 <form action="">
+                    <div className="arquivo">
+                        <input type="file" id="arquivoInput" />
+                        <label htmlFor="arquivoInput">Upload da foto de Perfil<img src="/Images/nuvem.svg" /></label>
+                    </div>
                     <input type="text" name="Nome" id="Nome" placeholder="Nome" />
                     <input type="email" name="email" id="email" placeholder="Email ou Telefone" />
                     <input type="password" name="senha" id="senha" placeholder="senha" />
                     <input type="password" name="senha" id="senha" placeholder="Confirmar senha" />
 
                 </form>
-                <a className="cad_buttom"  href={"/"}>Cadastro</a>
+                <a className="cad_buttom" href={"/"}>Cadastro</a>
                 <a className="cad_login" href={"/login"}>Já possui uma conta??</a>
             </div>
         </div>

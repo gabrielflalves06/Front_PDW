@@ -70,3 +70,43 @@
     font-size: 14px;
     color: #C4C4EB;
 }
+
+.arquivo input[type=file] {
+    height: 30px;
+    width: 100%;
+    color: #BEBEBE;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.arquivo label {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #BEBEBE;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.arquivo label img {
+    height: 30px;
+}
+
+.arquivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #BEBEBE;
+    margin-bottom: 20px;
+}
