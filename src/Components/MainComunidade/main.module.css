@@ -1,0 +1,8 @@
+.main_container{
+    width: 85.375;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nova Square',sans-serif;
+}

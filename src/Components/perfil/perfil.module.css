@@ -1,0 +1,50 @@
+.main_container {
+    width: 100%;
+    max-width: 85.375rem;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil {
+    background-color: #e9e9e9;
+    margin: 2rem;
+    width: 55rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto{
+    
+    border: 3px solid #2A3341;
+    border-radius: 100%;
+}
+
+.compartilhar_post {
+    width: 20.594rem;
+    height: 3.375rem;
+    border: 3px solid #2A3341;
+    border-radius: 33px;
+    background: #E2DCDC;
+    padding-left: 1.25rem;
+}
+
+.button_criar {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #11151B;
+    border: none;
+    border-radius: 30px;
+    padding: 0.938rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}

@@ -1,0 +1,7 @@
+.main_container{
+    width: 85.375rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

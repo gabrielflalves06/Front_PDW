@@ -1,0 +1,72 @@
+.cad_body {
+    background: url("/public/Images/Cadastro.svg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cad_container {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(40, 62, 255, 0.5);
+    border-radius: 2rem;
+}
+
+.slogan_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.cad_container form {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.cad_container form input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 3.5rem;
+    width: 26rem;
+    padding-left: 1rem;
+    margin: 4% 0;
+    border-radius: 5px;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.cad_buttom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #C4C4EB;
+    color: #393E46;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.5rem 7rem;
+    margin: 4%;
+}
+
+.cad_login {
+    font-size: 14px;
+    color: #C4C4EB;
+}

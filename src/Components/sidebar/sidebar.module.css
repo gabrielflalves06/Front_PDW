@@ -1,0 +1,35 @@
+.sidebar_container{
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+   
+    width: 18.75rem;
+    background-color: #222831;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.sidebar p, .criar{
+    width: 12.5rem;
+    height: 2.813rem;
+    background-color: #FFF;
+    border-radius: 43.5px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin: 1.25rem 0;
+    padding: 0 0.5rem;
+    
+}
+
+.sidebar hr{
+    width: 90%;
+}

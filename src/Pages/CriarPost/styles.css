@@ -1,0 +1,155 @@
+.EstiloPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #222831;
+  padding: 100px;
+  width: 80%;
+  height: 80%;
+  left:  50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.EstiloPost .titulo {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.EstiloPost .titulo input[type=text] {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.EstiloPost .titulo input[type=text]::-moz-placeholder {
+  font-weight: 900;
+  text-align: center;
+  color: #BEBEBE;
+}
+
+.EstiloPost .titulo input[type=text]::placeholder {
+  font-weight: 900;
+  text-align: center;
+  color: #BEBEBE;
+}
+
+.EstiloPost .conteudo {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.EstiloPost .conteudo input[type=text] {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.EstiloPost .conteudo input[type=text]::-moz-placeholder {
+  font-weight: 900;
+  text-align: center;
+  color: #BEBEBE;
+}
+
+.EstiloPost .conteudo input[type=text]::placeholder {
+  font-weight: 900;
+  text-align: center;
+  color: #BEBEBE;
+}
+
+.EstiloPost .arquivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #BEBEBE;
+  margin-bottom: 20px;
+}
+
+.EstiloPost .arquivo input[type=file] {
+  height: 30px;
+  width: 100%;
+  color: #BEBEBE;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.EstiloPost .arquivo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 900;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #BEBEBE;
+  cursor: pointer;
+}
+
+.EstiloPost .arquivo label img {
+  height: 30px;
+}
+
+.EstiloPost .botoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.EstiloPost .botoes .criar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 150px;
+  background-color: #11151B;
+  border-radius: 20px;
+  max-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  height: 50px;
+}
+
+.EstiloPost .botoes .criar img {
+  margin-left: 10px;
+  height: 25px;
+}
+
+.EstiloPost .botoes .cancelar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 10px;
+  width: 100%;
+  max-width: 150px;
+  background-color: #001C36;
+  border-radius: 20px;
+  max-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  height: 50px;
+}
+
+.EstiloPost .botoes .cancelar img {
+  height: 25px;
+}
